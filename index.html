@@ -365,7 +365,7 @@
         </div>
     </footer>
     
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal> <!--backdrop is-hidden-->
         <div class="modal">
             <button type="button" class="modal-close-button" data-modal-close>
                 <svg class="modal-close-btn-icon" width="18" height="18">
@@ -374,6 +374,68 @@
             </button>
         </div>
     </div>
-    <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script> 
+    
+                        <!-- FORM -->
+    
+    <form class="contact-form">
+        <input type="text" class="contact-form-input" placeholder="Your name*" name="user_name" required minlength="2"
+            pattern="^[a-zA-Zа-яА-ЯіІїЇ]+$" />
+        <input type="email" class="contact-form-input" placeholder="Your email*" name="user_email" required />
+        <input type="tel" class="contact-form-input" placeholder="Your phone number*" name="user_phone" required
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="xxx-xxx-xx-xx" />
+        <textarea name="user_message" class="contact-form-message" placeholder="Your message"></textarea>
+        <fieldset class="contact-form-fieldset">
+            <legend class="contact-form-group-description">Your age</legend>
+    
+            <label for="user-age-18">18+</label>
+            <input type="radio" name="user_age" id="user-age-18" class="contact-form-checkbox" value="18" />
+    
+            <label for="user-age-25">25+</label>
+            <input type="radio" name="user_age" id="user-age-25" class="contact-form-checkbox" value="25" />
+    
+            <label for="user-age-35">35+</label>
+            <input type="radio" name="user_age" id="user-age-35" class="contact-form-checkbox" value="35" />
+        </fieldset>
+        <fieldset class="contact-form-fieldset">
+            <legend class="contact-form-group-description">Your hobby</legend>
+    
+            <label>
+                <span>football</span>
+                <input type="checkbox" name="user_hobby" class="contact-form-checkbox" value="football" />
+            </label>
+    
+            <label>
+                swimming
+                <input type="checkbox" name="user_hobby" class="contact-form-checkbox" value="swimming" />
+            </label>
+    
+            <label>
+                tennis
+                <input type="checkbox" name="user_hobby" class="contact-form-checkbox" value="tennis" />
+            </label>
+        </fieldset>
+        <select name="user_car">
+            <optgroup label="lsdfs">
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+            </optgroup>
+            <optgroup label="dsfsd">
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+            </optgroup>
+            <optgroup label="lkl">
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Mercedes">Mercedes</option>
+            </optgroup>
+        </select>
+        <div class="contact-form-btn-wrapper">
+            <button type="submit" class="contact-form-btn">submit</button>
+            <button type="reset" class="contact-form-btn">clear</button>
+        </div>
+    </form>
 </body>
 </html>
